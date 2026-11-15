@@ -1,0 +1,489 @@
+
+/* =====================================
+   МАСТЕРСКАЯ РЫБАКА
+   Основные настройки
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1724;
+    color: #eaf2f5;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 65px 0;
+}
+
+section h2 {
+    color: #58d68d;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+
+/* =====================================
+   ШАПКА
+===================================== */
+
+.header {
+    background: linear-gradient(135deg, #102b40, #164d42);
+    padding: 45px 0;
+    text-align: center;
+    border-bottom: 3px solid #42c77a;
+}
+
+.header h1 {
+    color: #58d68d;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #d5e8e1;
+    font-size: 18px;
+}
+
+
+/* =====================================
+   НАВИГАЦИЯ
+===================================== */
+
+.navigation {
+    background: #102334;
+    padding: 17px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #29465a;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #58d68d;
+}
+
+
+/* =====================================
+   ГЛАВНЫЙ ЭКРАН
+===================================== */
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #122d40, #153b35);
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #58d68d;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0 30px;
+}
+
+
+/* =====================================
+   КНОПКИ
+===================================== */
+
+button,
+.main-button {
+    background: #36b96d;
+    color: #071a12;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.main-button:hover {
+    background: #63e69a;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* =====================================
+   КАРТОЧКИ
+===================================== */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.product {
+    background: #14283a;
+    border: 1px solid #29485b;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    border-color: #58d68d;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.product h3 {
+    color: #58d68d;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.product p {
+    color: #d1dce2;
+}
+
+.price {
+    color: #7df0a9 !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.add-to-cart {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   ПРЕИМУЩЕСТВА
+===================================== */
+
+.advantages {
+    background: #0e202f;
+}
+
+
+/* =====================================
+   КАТАЛОГ
+===================================== */
+
+.catalog {
+    background: #0b1724;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.category-button {
+    background: #1d3b4b;
+    color: white;
+}
+
+.category-button:hover {
+    background: #36b96d;
+}
+
+
+/* =====================================
+   ПОИСК
+===================================== */
+
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px auto;
+    max-width: 600px;
+}
+
+.search input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #426274;
+    background: #14283a;
+    color: white;
+    font-size: 16px;
+}
+
+.search input:focus {
+    outline: 2px solid #58d68d;
+}
+
+.search input::placeholder {
+    color: #a5b7c2;
+}
+
+
+/* =====================================
+   ПОПУЛЯРНЫЕ ТОВАРЫ
+===================================== */
+
+.popular {
+    background: #102334;
+}
+
+
+/* =====================================
+   КОРЗИНА
+===================================== */
+
+.cart {
+    background: #14283a;
+}
+
+.cart .container {
+    max-width: 900px;
+}
+
+#cart-items {
+    margin: 25px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: #0b1724;
+    border: 1px solid #315267;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.cart-item span:first-child {
+    color: #58d68d;
+    font-weight: bold;
+}
+
+.cart-item button {
+    padding: 8px 13px;
+}
+
+.cart-summary {
+    background: #0b1724;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.cart-summary p {
+    font-size: 18px;
+}
+
+.cart-summary span {
+    color: #58d68d;
+    font-weight: bold;
+}
+
+#clear-cart {
+    background: #d9534f;
+    color: white;
+    margin-right: 10px;
+}
+
+#clear-cart:hover {
+    background: #f16b65;
+}
+
+#checkout-button {
+    background: #58d68d;
+}
+
+
+/* =====================================
+   О НАС
+===================================== */
+
+.about {
+    background: #0e202f;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 12px auto;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   КОНТАКТЫ
+===================================== */
+
+.contacts {
+    background: #102334;
+    text-align: center;
+}
+
+.contacts p {
+    color: #c8d9df;
+}
+
+
+/* =====================================
+   ПОДВАЛ
+===================================== */
+
+.footer {
+    background: #07121c;
+    border-top: 2px solid #36b96d;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #a9c1ca;
+    margin: 5px 0;
+}
+
+
+/* =====================================
+   АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ
+===================================== */
+
+@media (max-width: 800px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .navigation .container {
+        gap: 15px;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+}
+
+
+/* =====================================
+   АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ
+===================================== */
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .header {
+        padding: 30px 0;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .navigation .container {
+        gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search button {
+        width: 100%;
+    }
+
+    .cart-item {
+        justify-content: flex-start;
+    }
+
+    #clear-cart,
+    #checkout-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+/* =====================================
+   КОНЕЦ СТИЛЕЙ
+===================================== */
