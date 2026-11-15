@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Майстерня рибалки — рибальські товари, вироби ручної роботи та програми">
+    <title>Майстерня рибалки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА САЙТУ -->
+    <header class="header" id="home">
+        <div class="container">
+            <h1>🎣 Майстерня рибалки</h1>
+            <p>Творчість. Риболовля. Технології.</p>
+        </div>
+    </header>
+
+    <!-- МЕНЮ -->
+    <nav class="navigation">
+        <div class="container">
+            <a href="#home">Головна</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#popular">Популярне</a>
+            <a href="#cart">Кошик</a>
+            <a href="#about">Про нас</a>
+            <a href="#contacts">Контакти</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ГОЛОВНА -->
+        <section class="hero">
+            <div class="container">
+                <h2>Ласкаво просимо!</h2>
+                <p>Усе для риболовлі та творчості в одному місці.</p>
+                <a class="main-button" href="#catalog">
+                    Перейти до каталогу
+                </a>
+            </div>
+        </section>
+
+        <!-- ПЕРЕВАГИ -->
+        <section class="advantages">
+            <div class="container">
+                <h2>Чому обирають нас?</h2>
+
+                <div class="products">
+                    <article class="product">
+                        <h3>🎣 Для риболовлі</h3>
+                        <p>Корисні товари для рибалок.</p>
+                    </article>
+
+                    <article class="product">
+                        <h3>🪵 Ручна робота</h3>
+                        <p>Цікаві вироби та сувеніри.</p>
+                    </article>
+
+                    <article class="product">
+                        <h3>💻 Технології</h3>
+                        <p>Програми та невеликі ігри.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- КАТАЛОГ -->
+        <section id="catalog" class="catalog">
+            <div class="container">
+                <h2>Наш каталог</h2>
+
+                <p>Обирай потрібну категорію товарів.</p>
+
+                <div class="categories">
+                    <button class="category-button" data-category="all">
+                        Усі товари
+                    </button>
+
+                    <button class="category-button" data-category="fishing">
+                        Риболовля
+                    </button>
+
+                    <button class="category-button" data-category="craft">
+                        Вироби
+                    </button>
+
+                    <button class="category-button" data-category="software">
+                        Програми
+                    </button>
+                </div>
+
+                <div class="search">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Знайти товар..."
+                    >
+                    <button id="search-button">Пошук</button>
+                </div>
+
+                <div class="products" id="product-list">
+
+                    <article class="product" data-category="fishing">
+                        <h3>🎣 Поплавець</h3>
+                        <p>Поплавець для поплавцевого вудилища.</p>
+                        <p class="price">25 грн</p>
+                        <button class="add-to-cart" data-id="1">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="fishing">
+                        <h3>🧵 Волосінь</h3>
+                        <p>Волосінь для рибальських снастей.</p>
+                        <p class="price">50 грн</p>
+                        <button class="add-to-cart" data-id="2">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="fishing">
+                        <h3>🪝 Гачки</h3>
+                        <p>Набір рибальських гачків.</p>
+                        <p class="price">20 грн</p>
+                        <button class="add-to-cart" data-id="3">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="fishing">
+                        <h3>🎣 Повідець</h3>
+                        <p>Готовий повідець для риболовлі.</p>
+                        <p class="price">15 грн</p>
+                        <button class="add-to-cart" data-id="4">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="fishing">
+                        <h3>🎯 Поплавцева оснастка</h3>
+                        <p>Готова оснастка для поплавцевого вудилища.</p>
+                        <p class="price">37 грн</p>
+                        <button class="add-to-cart" data-id="5">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="fishing">
+                        <h3>⚖️ Вантажила</h3>
+                        <p>Вантажила для поплавцевої оснастки.</p>
+                        <p class="price">20 грн</p>
+                        <button class="add-to-cart" data-id="6">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="fishing">
+                        <h3>🔗 Вертлюжки</h3>
+                        <p>Невеликі рибальські вертлюжки.</p>
+                        <p class="price">25 грн</p>
+                        <button class="add-to-cart" data-id="7">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="fishing">
+                        <h3>📦 Органайзер</h3>
+                        <p>Коробочка для зберігання снастей.</p>
+                        <p class="price">60 грн</p>
+                        <button class="add-to-cart" data-id="8">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="craft">
+                        <h3>🪵 Дерев'яний сувенір</h3>
+                        <p>Невеликий виріб ручної роботи.</p>
+                        <p class="price">80 грн</p>
+                        <button class="add-to-cart" data-id="9">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="craft">
+                        <h3>🎁 Декор</h3>
+                        <p>Прикраса для кімнати.</p>
+                        <p class="price">70 грн</p>
+                        <button class="add-to-cart" data-id="10">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="software">
+                        <h3>💻 Калькулятор</h3>
+                        <p>Невелика корисна програма.</p>
+                        <p class="price">30 грн</p>
+                        <button class="add-to-cart" data-id="11">
+                            До кошика
+                        </button>
+                    </article>
+
+                    <article class="product" data-category="software">
+                        <h3>🎮 Гра</h3>
+                        <p>Невелика гра, створена на Python.</p>
+                        <p class="price">50 грн</p>
+                        <button class="add-to-cart" data-id="12">
+                            До кошика
+                        </button>
+                    </article>
+
+                </div>
+
+                <p id="no-products" hidden>
+                    Товарів не знайдено.
+                </p>
+            </div>
+        </section>
+
+        <!-- ПОПУЛЯРНІ ТОВАРИ -->
+        <section id="popular" class="popular">
+            <div class="container">
+                <h2>Популярні товари</h2>
+
+                <div class="products">
+                    <article class="product">
+                        <h3>🎯 Поплавцева оснастка</h3>
+                        <p>Один з основних товарів магазину.</p>
+                    </article>
+
+                    <article class="product">
+                        <h3>🧵 Рибальська волосінь</h3>
+                        <p>Корисна річ для рибалки.</p>
+                    </article>
+
+                    <article class="product">
+                        <h3>🪝 Гачки</h3>
+                        <p>Необхідна частина рибальських снастей.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОШИК -->
+        <section id="cart" class="cart">
+            <div class="container">
+                <h2>🛒 Кошик щоб оплатити замовлення
+                     напишіть нам у Telegram</h2>
+
+                <div id="cart-items">
+                    <p>Ваш кошик поки порожній.</p>
+                </div>
+
+                <div class="cart-summary">
+                    <p>
+                        Кількість товарів:
+                        <span id="cart-count">0</span>
+                    </p>
+
+                    <p>
+                        Загальна сума:
+                        <span id="cart-total">0</span> грн
+                    </p>
+                </div>
+
+                <button id="clear-cart">
+                    Очистити кошик
+                </button>
+
+                <button id="checkout-button">
+                    Оформити замовлення
+                </button>
+            </div>
+        </section>
+
+        <!-- ПРО МАГАЗИН -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Про нас</h2>
+
+                <p>
+                    Майстерня рибалки — невеликий проєкт,
+                    який об'єднує риболовлю, творчість
+                    та програмування.
+                </p>
+
+                <p>
+                    Тут можна знайти рибальські товари,
+                    вироби ручної роботи та програми.
+                </p>
+            </div>
+        </section>
+
+        <!-- КОНТАКТИ -->
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2>Контакти</h2>
+
+                <p>
+                    Маєш запитання щодо товарів або
+                    замовлення?
+                    Напиши нам у Telegram!
+                </p>
+
+                <a
+                    href="https://t.me/DEADMAN_3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="main-button"
+                >
+                    ✈️ Написати в Telegram
+                </a>
+
+                <p>Telegram: @DEADMAN_3</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- НИЖНЯ ЧАСТИНА САЙТУ -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Майстерня рибалки</p>
+            <p>Творчість. Риболовля. Технології.</p>
+        </div>
+    </footer>
+
+    <!-- ПІДКЛЮЧЕННЯ JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
